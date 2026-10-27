@@ -61,7 +61,7 @@ Print face down without supports. The notches widen toward the back, so they
 need no supports either. A textured PEI sheet gives the face a pebbled finish
 like the originals.
 
-Pieces larger than `--bed` (default 380 mm; use 250 for a Bambu X1C) are
+Pieces larger than `--bed` (default 250 mm, which fits a Bambu X1C) are
 split. Horizontal cuts come first: the fewest that keep every band within the
 bed, spaced evenly and moved at least 15 mm clear of any notch. Any band still
 too wide is then split into equal columns. Each cut gets a splice plate, which

@@ -25,13 +25,13 @@ Then:
 
 ```bash
 uv run marquee.py                                   # A-Z, 0-9 and punctuation, single height
-uv run marquee.py HELLO --height double --bed 250   # 18 in letters, split for a 250 mm bed
+uv run marquee.py HELLO --height double --bed 350   # 18 in letters, split for a 350 mm bed
 uv run marquee.py E --font "Montserrat:style=Bold"  # an installed font by name
 ```
 
 STLs land in `out/single/` and `out/double/`. The font defaults to the first file in `fonts/`, and [Barlow Semi Condensed Bold](https://github.com/jpt/barlow) is included. Pick a heavy weight if you swap it, since thin strokes lose the groove.
 
-A letter larger than `--bed` (380 mm by default) comes out as numbered pieces plus splice plates, like `T-1.stl`, `T-2.stl`, and `T-splice-1-2.stl`. Glue each splice inside the face across its seam. A textured PEI sheet gives the face a pebbled finish like the originals.
+A letter larger than `--bed` (250 mm by default, which fits a Bambu X1C) comes out as numbered pieces plus splice plates, like `I-1.stl`, `I-2.stl`, and `I-splice-1-2.stl`. Glue each splice inside the face across its seam. A textured PEI sheet gives the face a pebbled finish like the originals.
 
 To tweak one letter by hand, open `marquee.scad` in OpenSCAD and use the Customizer. Start OpenSCAD with `OPENSCAD_FONT_PATH=fonts` so it can find the fonts in this folder.
 

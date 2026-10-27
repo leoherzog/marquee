@@ -203,7 +203,7 @@ def main() -> None:
     ap.add_argument("chars", nargs="?", default=DEFAULT_SET, help="characters to render (default: A-Z, 0-9 and common punctuation)")
     ap.add_argument("--font", help="font file or fontconfig name (default: first file in fonts/)")
     ap.add_argument("--height", choices=["single", "double", "both"], default="single")
-    ap.add_argument("--bed", type=float, default=380, help="largest printable piece in mm; 0 never splits")
+    ap.add_argument("--bed", type=float, default=250, help="largest printable piece in mm; 0 never splits")
     ap.add_argument("--splice-width", type=float, default=40, help="width of the plates that bridge cuts, mm")
     ap.add_argument("--set", action="append", default=[], metavar="NAME=VALUE",
                     help="override a marquee.scad parameter, e.g. --set rail_pitch=180")
