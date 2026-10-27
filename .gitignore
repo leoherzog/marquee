@@ -1,0 +1,8 @@
+out/
+*.AppImage
+fonts/*.zip
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.webp
